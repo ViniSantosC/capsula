@@ -1,24 +1,36 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3DM O QUE FICA</title>
+
+    <meta
+      name="description"
+      content="Uma cápsula de memórias da 3DM: pessoas, momentos e histórias que merecem continuar vivas."
+    />
+
+    <title>3DM — O que fica</title>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
+    <!-- CABEÇALHO -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-capsula">
         <div class="container-fluid">
-          <!-- Marca -->
-          <a class="navbar-brand marca" href="#inicio">
-            <img class="logo-h" src="img/icon.png" alt="Mascote 3DM" />
+          <a
+            class="navbar-brand marca"
+            href="#inicio"
+            aria-label="Voltar ao início"
+          >
+            <img class="logo-h" src="img/icon.png" alt="Símbolo da 3DM" />
 
             <div class="marca-texto">
               <span>3DM</span>
@@ -26,7 +38,6 @@
             </div>
           </a>
 
-          <!-- Botão mobile -->
           <button
             class="navbar-toggler"
             type="button"
@@ -34,21 +45,17 @@
             data-bs-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
-            aria-label="Abrir menu"
+            aria-label="Abrir ou fechar menu"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <!-- Links -->
           <div class="collapse navbar-collapse" id="navbarNav">
             <div class="navbar-nav ms-auto">
-              <a class="nav-link active" href="#inicio"> Nossa história </a>
-
-              <a class="nav-link" href="#turma"> Nossa turma </a>
-
-              <a class="nav-link" href="#momentos"> Momentos </a>
-
-              <a class="nav-link" href="#homenagens"> Homenagens </a>
+              <a class="nav-link" href="#inicio">Nossa história</a>
+              <a class="nav-link" href="#turma">Nossa turma</a>
+              <a class="nav-link" href="#momentos">Momentos</a>
+              <a class="nav-link" href="#homenagens">Homenagens</a>
             </div>
           </div>
         </div>
@@ -56,308 +63,1715 @@
     </header>
 
     <main>
-      <section class="inicio">
-        <h1><span>3DM</span></h1>
-        <h1>O QUE FICA</h1>
-        <h2>Uma historia que vai fica na escola e em nossos coraçoes.</h2>
+      <!-- 1. ABERTURA -->
+      <section class="inicio" id="inicio">
+        <div class="inicio-conteudo">
+          <p class="inicio-sobretitulo">UMA CÁPSULA DE MEMÓRIAS</p>
 
+          <h1>
+            <span>3DM</span>
+            O QUE FICA
+          </h1>
+
+          <h2>
+            Uma história que continuará vivendo na escola e em nossos corações.
+          </h2>
+
+          <p class="inicio-descricao">
+            Entre aulas, conversas, trabalhos, risadas e momentos que pareciam
+            comuns, construímos algo que merece ser lembrado.
+          </p>
+        </div>
+
+        <!-- CARROSSEL DA TURMA -->
         <div class="moldura-carrossel">
           <div
-            id="carouselExampleAutoplaying"
+            id="carouselTurma"
             class="carousel slide"
             data-bs-ride="carousel"
+            aria-label="Fotografias da turma 3DM"
           >
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="img/sala6.jpg" class="d-block w-100" alt="..." />
+                <img
+                  src="img/sala6.jpg"
+                  class="d-block w-100"
+                  alt="Registro da turma 3DM"
+                />
               </div>
+
               <div class="carousel-item">
-                <img src="img/sala5.JPG" class="d-block w-100" alt="..." />
+                <img
+                  src="img/sala5.JPG"
+                  class="d-block w-100"
+                  alt="Um momento vivido pela turma"
+                />
               </div>
+
               <div class="carousel-item">
-                <img src="img/sala 3.jpg" class="d-block w-100" alt="..." />
+                <img
+                  src="img/sala 3.jpg"
+                  class="d-block w-100"
+                  alt="Mais uma lembrança da 3DM"
+                />
               </div>
             </div>
+
             <button
               class="carousel-control-prev"
               type="button"
-              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-target="#carouselTurma"
               data-bs-slide="prev"
+              aria-label="Fotografia anterior"
             >
               <span
                 class="carousel-control-prev-icon"
                 aria-hidden="true"
               ></span>
-              <span class="visually-hidden">Previous</span>
             </button>
+
             <button
               class="carousel-control-next"
               type="button"
-              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-target="#carouselTurma"
               data-bs-slide="next"
+              aria-label="Próxima fotografia"
             >
               <span
                 class="carousel-control-next-icon"
                 aria-hidden="true"
               ></span>
-              <span class="visually-hidden">Next</span>
             </button>
           </div>
         </div>
+
+        <a class="inicio-indicador" href="#turma">
+          Continue explorando
+          <span aria-hidden="true">↓</span>
+        </a>
+        
       </section>
-      <div class="hr-personalizado">
+
+      <div class="hr-personalizado" aria-hidden="true">
         <span>✦ 🐻‍❄️ ✦</span>
       </div>
-      <section class="parte2">
+
+      <!-- 2. NOSSA TURMA -->
+      <section class="parte2" id="turma">
         <div class="direira">
-          <h1 class="t1">NOSSA TURMA</h1>
-          <p class="s1">tantas pessoas</p>
-          <p class="s2">tantas historias</p>
+          <span class="secao-sobretitulo">QUEM FEZ PARTE</span>
+
+          <h2 class="t1">Nossa turma</h2>
+
+          <p class="s1">Tantas pessoas.</p>
+          <p class="s2">Tantas histórias.</p>
 
           <p class="s3">
-            Esta não é apenas uma turma é uma historia linda que eu devo
-            agradecer por paticipar e assitir
+            Esta não foi apenas uma turma. Foi um encontro de pessoas diferentes
+            que, juntas, construíram uma história que levaremos conosco. Sou
+            grato por ter participado de tudo isso.
           </p>
 
-          <div class="accordion" id="accordionExample">
+          <div class="accordion" id="accordionTurma">
+            <!-- QUEM ESTAVA AQUI -->
             <div class="accordion-item">
-              <h2 class="accordion-header">
+              <h3 class="accordion-header">
                 <button
                   class="accordion-button"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
+                  data-bs-target="#collapsePessoas"
                   aria-expanded="true"
-                  aria-controls="collapseOne"
+                  aria-controls="collapsePessoas"
                 >
                   Quem estava aqui
                 </button>
-              </h2>
+              </h3>
+
               <div
-                id="collapseOne"
+                id="collapsePessoas"
                 class="accordion-collapse collapse show"
-                data-bs-parent="#accordionExample"
+                data-bs-parent="#accordionTurma"
               >
                 <div class="accordion-body">
-                  <strong>Essas pessoas incriveis são:</strong> <br />Mathues
-                  Xavier <br />Clara <br />Larisa <br />David <br />
-                  Emanuela <br />
-                  Gusttavo <br />
-                  Cezar <br />
-                  Isabelle <br />
-                  Kecio <br />
-                  Gledersson <br />
-                  Athos <br />
-                  Victor henrique <br />
-                  Francisco <br />
-                  Ryan Silva <br />
-                  Mathues Valadares <br />
-                  João Nicolas <br />Vinicius Souza <br />
-                  Gabriel <br />
-                  Kauan <br />
-                  Matheus Santos <br />
-                  Rafael Yuuta <br />
-                  Victor Correia <br />
-                  Felipe Correia <br />Guilherme Bueno <br />Ryan Matos
-                  <br />Patrick <br />Carlos <br />Lucas Lopez <br />
-                  <code>3DM</code>, A sala que vai marcar essa escola.
+                  <p>
+                    Cada pessoa trouxe um jeito único de tornar a 3DM o que ela
+                    foi. Estas são as pessoas que compartilharam essa caminhada
+                    conosco:
+                  </p>
+
+                  <ul class="lista-pessoas">
+                    <li>Mathues Xavier</li>
+                    <li>Clara</li>
+                    <li>Larisa</li>
+                    <li>David</li>
+                    <li>Emanuela</li>
+                    <li>Gusttavo</li>
+                    <li>Cezar</li>
+                    <li>Isabelle</li>
+                    <li>Kecio</li>
+                    <li>Gledersson</li>
+                    <li>Athos</li>
+                    <li>Victor Henrique</li>
+                    <li>Francisco</li>
+                    <li>Ryan Silva</li>
+                    <li>Mathues Valadares</li>
+                    <li>João Nicolas</li>
+                    <li>Vinicius Souza</li>
+                    <li>Gabriel</li>
+                    <li>Kauan</li>
+                    <li>Matheus Santos</li>
+                    <li>Rafael Yuuta</li>
+                    <li>Victor Correia</li>
+                    <li>Felipe Correia</li>
+                    <li>Guilherme Bueno</li>
+                    <li>Ryan Matos</li>
+                    <li>Patrick</li>
+                    <li>Carlos</li>
+                    <li>Lucas Lopez</li>
+                  </ul>
+
+                  <p class="texto-destaque">
+                    3DM: mais do que uma sala, uma parte da nossa história.
+                  </p>
                 </div>
               </div>
             </div>
+
+            <!-- QUEM CAMINHOU CONOSCO -->
             <div class="accordion-item">
-              <h2 class="accordion-header">
+              <h3 class="accordion-header">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
+                  data-bs-target="#collapseCaminho"
                   aria-expanded="false"
-                  aria-controls="collapseTwo"
+                  aria-controls="collapseCaminho"
                 >
                   Quem caminhou conosco
                 </button>
-              </h2>
+              </h3>
+
               <div
-                id="collapseTwo"
+                id="collapseCaminho"
                 class="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
+                data-bs-parent="#accordionTurma"
               >
                 <div class="accordion-body">
-                  <strong>Quais Amigos/Professores</strong> <br />Romario
-                  <br />Wesley <br />Carlos <br />Bruna <br />Pedro
-                  <br />Rodrigo <br />Manoel <br>Nilsa<br /> <br>Patricia <br> Pimenta<br> Alexadre <br />Elen
-                  <br />Pocoyo <br />Jhony <br />Karen <br />
-                  sidney <br />João <br />Luan <br /> 
-                  <code>Amigos</code>, que sempre estaram gravado em nossas
-                  cabeças e coraçoes alem de mostrar como o mundo real mente
-                  funciona.
+                  <p>
+                    Nem todos chegaram ao último capítulo, mas isso não
+                    significa que deixaram de fazer parte da história.
+                  </p>
+
+                  <p>
+                    Algumas pessoas seguiram outros caminhos. Ainda assim, as
+                    lembranças que construímos com elas continuam aqui.
+                  </p>
+
+                  <ul class="lista-pessoas">
+                    <li>Romario</li>
+                    <li>Wesley</li>
+                    <li>Carlos</li>
+                    <li>Bruna</li>
+                    <li>Pedro</li>
+                    <li>Rodrigo</li>
+                    <li>Manoel</li>
+                    <li>Nilsa</li>
+                    <li>Patricia</li>
+                    <li>Pimenta</li>
+                    <li>Alexandre</li>
+                    <li>Elen</li>
+                    <li>Pocoyo</li>
+                    <li>Jhony</li>
+                    <li>Karen</li>
+                    <li>Sidney</li>
+                    <li>João</li>
+                    <li>Luan</li>
+                  </ul>
+
+                  <p class="texto-destaque">
+                    Algumas pessoas seguem outros caminhos, mas continuam
+                    fazendo parte das nossas lembranças.
+                  </p>
                 </div>
               </div>
             </div>
+
+            <!-- A ESCOLA -->
             <div class="accordion-item">
-              <h2 class="accordion-header">
+              <h3 class="accordion-header">
                 <button
                   class="accordion-button collapsed"
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
+                  data-bs-target="#collapseEscola"
                   aria-expanded="false"
-                  aria-controls="collapseThree"
+                  aria-controls="collapseEscola"
                 >
-                  Ambiente
+                  O lugar onde tudo aconteceu
                 </button>
-              </h2>
+              </h3>
+
               <div
-                id="collapseThree"
+                id="collapseEscola"
                 class="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
+                data-bs-parent="#accordionTurma"
               >
                 <div class="accordion-body">
-                  <strong>Alberto Salotti</strong>, muitas vezes reclamando
-                  dessa escola, mas o que ela fez por mim e por nós está muito
-                  além da compreensão. Fez-me conhecer pessoas que hoje posso
-                  chamar de irmãos e me fez conhecer pessoas incríveis como
-                  vocês.
-                  <code
-                    >Lembro do primeiro dia de aula nessa escola: teve o
-                    acolhimento e uma menina falou: "Você vai sair dessa escola,
-                    mas ela nunca vai sair de você". Vejo que é a pura
-                    verdade.</code
-                  >
-                  Obrigado a todos que fazem parte dessa escola.
+                  <h4>Alberto Salotti</h4>
+
+                  <p>
+                    Às vezes reclamávamos da escola, das aulas e da rotina. Mas,
+                    olhando para trás, percebo que ela nos deu muito mais do que
+                    um lugar para estudar.
+                  </p>
+
+                  <p>
+                    Foi aqui que conheci pessoas que hoje posso chamar de amigos
+                    e vivi momentos que quero guardar comigo.
+                  </p>
+
+                  <blockquote>
+                    “Você vai sair dessa escola, mas ela nunca vai sair de
+                    você.”
+                  </blockquote>
+
+                  <p>
+                    Lembro dessa frase desde o meu primeiro dia de aula. Hoje,
+                    entendo um pouco melhor o que ela significa.
+                  </p>
+
+                  <p class="texto-destaque">
+                    Obrigado a todos que fizeram parte dessa história.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="esquerda"><img src="img/sala10.webp" alt="" /></div>
+
+        <div class="esquerda">
+          <img
+            src="img/sala10.webp"
+            alt="Uma lembrança da turma na escola"
+            loading="lazy"
+          />
+        </div>
       </section>
-      <div class="hr-personalizado">
-          <span>✦ 🐻‍❄️ ✦</span>
+
+      <div class="hr-personalizado" aria-hidden="true">
+        <span>✦ 🐻‍❄️ ✦</span>
+      </div>
+
+      <!-- 3. MOMENTOS -->
+      <section class="momentos" id="momentos">
+        <div class="momentos-titulo">
+          <span>PARTE DA NOSSA HISTÓRIA</span>
+
+          <h2>Momentos</h2>
+
+          <p>
+            Algumas fotos registram um instante. Outras guardam uma história
+            inteira.
+          </p>
+
+          <p>
+            Talvez, na hora, fossem apenas mais um dia de aula, uma brincadeira
+            ou uma foto sem importância. Hoje, são lembranças que merecem ficar
+            guardadas.
+          </p>
         </div>
-     <section class="momentos" id="momentos">
 
-    <div class="momentos-titulo">
-        <span>PARTE DA NOSSA HISTÓRIA</span>
-
-        <h2>Momentos</h2>
-
-        <p>
-            Algumas fotos registram um momento.
-            Outras guardam uma história inteira.
-        </p>
-    </div>
-
-
-
-    <!-- CARD DO MOMENTO -->
-
-   <!-- ÁLBUM 01: AMIZADES -->
-<section class="bloco-album">
-    <div class="momento-destaque">
-        <div class="momento-foto">
-            <img src="img/amizades/16.JPG" alt="Amizades">
-        </div>
-        <div class="momento-info">
-            <span class="numero-momento">01</span>
-            <h3>Amizades</h3>
-            
-            <!-- GALERIA DOS MOMENTOS (Interna ao bloco) -->
-            <div class="galeria-overlay">
-                <div class="galeria">
-                    <button class="fechar-galeria">×</button>
-                    <div class="galeria-cabecalho">
-                        <span>MEMÓRIAS</span>
-                        <h2>Amizades</h2>
-                        <p>Alguns momentos que ficaram para sempre.</p>
-                    </div>
-                    <div class="fotos-grid">
-                        <button class="foto-item"><img src="img/amizades/1.JPG" alt="Momento"></button>
-                        <button class="foto-item"><img src="img/amizades/2.JPG" alt="Momento"></button>
-                         <button class="foto-item"><img src="img/amizades/3.JPG" alt="Momento"></button>
-                        <button class="foto-item"><img src="img/amizades/4.JPG" alt="Momento"></button>
-                         <button class="foto-item"><img src="img/amizades/5.JPG" alt="Momento"></button>
-                        <button class="foto-item"><img src="img/amizades/6.JPG" alt="Momento"></button>
-                         <button class="foto-item"><img src="img/amizades/7.JPG" alt="Momento"></button>
-                        <button class="foto-item"><img src="img/amizades/8.JPG" alt="Momento"></button>
-                         <button class="foto-item"><img src="img/amizades/9.JPG" alt="Momento"></button>
-                        <button class="foto-item"><img src="img/amizades/10.JPG" alt="Momento"></button>
-                         <button class="foto-item"><img src="img/amizades/11.JPG" alt="Momento"></button>
-                        <button class="foto-item"><img src="img/amizades/12.JPG" alt="Momento"></button>
-                         <button class="foto-item"><img src="img/amizades/13.JPG" alt="Momento"></button>
-                        <button class="foto-item"><img src="img/amizades/14.JPG" alt="Momento"></button>
-                         <button class="foto-item"><img src="img/amizades/15.JPG" alt="Momento"></button>
-                        <button class="foto-item"><img src="img/amizades/16.JPG" alt="Momento"></button>
-                         <button class="foto-item"><img src="img/amizades/17.JPG" alt="Momento"></button>
-                        <button class="foto-item"><img src="img/amizades/18.JPG" alt="Momento"></button>
-                         <button class="foto-item"><img src="img/amizades/19.JPG" alt="Momento"></button>
-                        <button class="foto-item"><img src="img/amizades/20.JPG" alt="Momento"></button>
-                         <button class="foto-item"><img src="img/amizades/21.jpg" alt="Momento"></button>
-                        <button class="foto-item"><img src="img/amizades/22.jpg" alt="Momento"></button>
-                         <button class="foto-item"><img src="img/amizades/23.jpg" alt="Momento"></button>
-                        <button class="foto-item"><img src="img/amizades/24.jpg" alt="Momento"></button>
-                         <button class="foto-item"><img src="img/amizades/26.jpg" alt="Momento"></button>
-                      
-                        <!-- Adicione o restante das suas fotos aqui... -->
-                    </div>
-                </div>
+        <!-- ÁLBUM 01: AMIZADES -->
+        <section class="bloco-album" aria-labelledby="titulo-amizades">
+          <div class="momento-destaque">
+            <div class="momento-foto">
+              <img
+                src="img/amizades/16.JPG"
+                alt="Amigos reunidos em um momento da escola"
+                loading="lazy"
+              />
             </div>
 
-            <p>Pessoas que chegaram como colegas e acabaram fazendo parte da nossa história.</p>
-            <button class="abrir-galeria">Ver momentos <span>→</span></button>
+            <div class="momento-info">
+              <span class="numero-momento">01</span>
+              <h3 id="titulo-amizades">Amizades</h3>
+
+              <p>
+                Pessoas que chegaram como colegas e, aos poucos, se tornaram
+                parte da nossa história.
+              </p>
+
+              <button class="abrir-galeria" type="button">
+                Ver momentos <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="galeria-overlay" aria-hidden="true">
+            <div
+              class="galeria"
+              role="dialog"
+              aria-modal="true"
+              aria-label="Galeria de amizades"
+            >
+              <button
+                class="fechar-galeria"
+                type="button"
+                aria-label="Fechar galeria"
+              >
+                ×
+              </button>
+
+              <div class="galeria-cabecalho">
+                <span>MEMÓRIAS</span>
+                <h2>Amizades</h2>
+                <p>Pessoas que fizeram parte da nossa caminhada.</p>
+              </div>
+
+              <div class="fotos-grid">
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/amizades/1.JPG"
+                    alt="Registro de amizade"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/amizades/2.JPG"
+                    alt="Registro de amizade"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/amizades/3.JPG"
+                    alt="Registro de amizade"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/amizades/4.JPG"
+                    alt="Registro de amizade"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/amizades/5.JPG"
+                    alt="Registro de amizade"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/amizades/6.JPG"
+                    alt="Registro de amizade"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/amizades/7.JPG"
+                    alt="Registro de amizade"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/amizades/8.JPG"
+                    alt="Registro de amizade"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/amizades/9.JPG"
+                    alt="Registro de amizade"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/amizades/10.JPG"
+                    alt="Registro de amizade"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/amizades/11.JPG"
+                    alt="Registro de amizade"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/amizades/12.JPG"
+                    alt="Registro de amizade"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/amizades/13.JPG"
+                    alt="Registro de amizade"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/amizades/14.JPG"
+                    alt="Registro de amizade"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/amizades/15.JPG"
+                    alt="Registro de amizade"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/amizades/16.JPG"
+                    alt="Registro de amizade"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/amizades/17.JPG"
+                    alt="Registro de amizade"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/amizades/18.JPG"
+                    alt="Registro de amizade"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/amizades/19.JPG"
+                    alt="Registro de amizade"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/amizades/20.JPG"
+                    alt="Registro de amizade"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/amizades/21.jpg"
+                    alt="Registro de amizade"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/amizades/22.jpg"
+                    alt="Registro de amizade"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/amizades/23.jpg"
+                    alt="Registro de amizade"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/amizades/24.jpg"
+                    alt="Registro de amizade"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/amizades/26.jpg"
+                    alt="Registro de amizade"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ÁLBUM 02: CARETAS -->
+        <section class="bloco-album" aria-labelledby="titulo-caretas">
+          <div class="momento-destaque">
+            <div class="momento-foto">
+              <img
+                src="img/caretas/DSC02952.JPG"
+                alt="Uma das caretas registradas pela turma"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="momento-info">
+              <span class="numero-momento">02</span>
+              <h3 id="titulo-caretas">Caretas</h3>
+
+              <p>
+                Nem todas as fotos precisavam sair perfeitas. Algumas só
+                precisavam registrar as nossas melhores caretas e as risadas que
+                vieram junto.
+              </p>
+
+              <button class="abrir-galeria" type="button">
+                Ver momentos <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="galeria-overlay" aria-hidden="true">
+            <div
+              class="galeria"
+              role="dialog"
+              aria-modal="true"
+              aria-label="Galeria de caretas"
+            >
+              <button
+                class="fechar-galeria"
+                type="button"
+                aria-label="Fechar galeria"
+              >
+                ×
+              </button>
+
+              <div class="galeria-cabecalho">
+                <span>RISADAS REGISTRADAS</span>
+                <h2>Caretas</h2>
+                <p>Algumas imagens dispensam qualquer explicação.</p>
+              </div>
+
+              <div class="fotos-grid">
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/caretas/DSC02952.JPG"
+                    alt="Careta da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/caretas/DSC02956.JPG"
+                    alt="Careta da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/caretas/DSC03294.JPG"
+                    alt="Careta da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/caretas/DSC03805.JPG"
+                    alt="Careta da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/caretas/DSC03928.JPG"
+                    alt="Careta da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/caretas/DSC04064.JPG"
+                    alt="Careta da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/caretas/DSC04066.JPG"
+                    alt="Careta da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/caretas/DSC04077.JPG"
+                    alt="Careta da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/caretas/DSC04080.JPG"
+                    alt="Careta da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/caretas/DSC04089.JPG"
+                    alt="Careta da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/caretas/DSC04091.JPG"
+                    alt="Careta da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/caretas/DSC04318.JPG"
+                    alt="Careta da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/caretas/DSC04457.JPG"
+                    alt="Careta da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/caretas/DSC04623.JPG"
+                    alt="Careta da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/caretas/DSC04627.JPG"
+                    alt="Careta da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/caretas/DSC04828.JPG"
+                    alt="Careta da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/caretas/DSC04906.JPG"
+                    alt="Careta da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/caretas/DSC04929.JPG"
+                    alt="Careta da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/caretas/DSC05023.JPG"
+                    alt="Careta da turma"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ÁLBUM 03: DESPEDIDAS -->
+        <section class="bloco-album" aria-labelledby="titulo-despedidas">
+          <div class="momento-destaque">
+            <div class="momento-foto">
+              <img
+                src="img/despedida/DSC04539.JPG"
+                alt="Um momento de despedida"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="momento-info">
+              <span class="numero-momento">03</span>
+              <h3 id="titulo-despedidas">Despedidas</h3>
+
+              <p>
+                Algumas despedidas chegam antes de estarmos preparados. Mas quem
+                fez parte da nossa caminhada continua presente nas lembranças
+                que construímos.
+              </p>
+
+              <button class="abrir-galeria" type="button">
+                Ver momentos <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="galeria-overlay" aria-hidden="true">
+            <div
+              class="galeria"
+              role="dialog"
+              aria-modal="true"
+              aria-label="Galeria de despedidas"
+            >
+              <button
+                class="fechar-galeria"
+                type="button"
+                aria-label="Fechar galeria"
+              >
+                ×
+              </button>
+
+              <div class="galeria-cabecalho">
+                <span>LEMBRANÇAS QUE FICAM</span>
+                <h2>Despedidas</h2>
+                <p>
+                  Algumas pessoas seguem outros caminhos, mas continuam na
+                  história.
+                </p>
+              </div>
+
+              <div class="fotos-grid">
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/despedida/DSC04540.JPG"
+                    alt="Registro de despedida"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/despedida/DSC04541.JPG"
+                    alt="Registro de despedida"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/despedida/DSC04545.JPG"
+                    alt="Registro de despedida"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/despedida/DSC04546.JPG"
+                    alt="Registro de despedida"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/despedida/DSC04547.JPG"
+                    alt="Registro de despedida"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ÁLBUM 04: EDUCAÇÃO FÍSICA -->
+        <section class="bloco-album" aria-labelledby="titulo-educacao">
+          <div class="momento-destaque">
+            <div class="momento-foto">
+              <img
+                src="img/educação fisica/DSC04326.JPG"
+                alt="Momento da turma durante a educação física"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="momento-info">
+              <span class="numero-momento">04</span>
+              <h3 id="titulo-educacao">Educação Física</h3>
+
+              <p>
+                Entre jogos, atividades e momentos inesperados, até as aulas
+                mais comuns acabaram virando boas histórias.
+              </p>
+
+              <button class="abrir-galeria" type="button">
+                Ver momentos <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="galeria-overlay" aria-hidden="true">
+            <div
+              class="galeria"
+              role="dialog"
+              aria-modal="true"
+              aria-label="Galeria de educação física"
+            >
+              <button
+                class="fechar-galeria"
+                type="button"
+                aria-label="Fechar galeria"
+              >
+                ×
+              </button>
+
+              <div class="galeria-cabecalho">
+                <span>EM MOVIMENTO</span>
+                <h2>Educação Física</h2>
+                <p>Mais uma parte da nossa rotina que virou lembrança.</p>
+              </div>
+
+              <div class="fotos-grid">
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/educação fisica/DSC03423.JPG"
+                    alt="Atividade de educação física"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/educação fisica/DSC03431.JPG"
+                    alt="Atividade de educação física"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/educação fisica/DSC03432.JPG"
+                    alt="Atividade de educação física"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/educação fisica/DSC03443.JPG"
+                    alt="Atividade de educação física"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/educação fisica/DSC03450.JPG"
+                    alt="Atividade de educação física"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/educação fisica/DSC03453.JPG"
+                    alt="Atividade de educação física"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/educação fisica/DSC03462.JPG"
+                    alt="Atividade de educação física"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/educação fisica/DSC04325.JPG"
+                    alt="Atividade de educação física"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/educação fisica/DSC04326.JPG"
+                    alt="Atividade de educação física"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/educação fisica/DSC04327.JPG"
+                    alt="Atividade de educação física"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ÁLBUM 05: EXPERIMENTOS -->
+        <section class="bloco-album" aria-labelledby="titulo-experimentos">
+          <div class="momento-destaque">
+            <div class="momento-foto">
+              <img
+                src="img/experimentos/DSC04720.JPG"
+                alt="Atividade realizada pela turma"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="momento-info">
+              <span class="numero-momento">05</span>
+              <h3 id="titulo-experimentos">Experimentos</h3>
+
+              <p>
+                Entre tentativas, descobertas e surpresas, sempre havia algo
+                novo para aprender — e para lembrar.
+              </p>
+
+              <button class="abrir-galeria" type="button">
+                Ver momentos <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="galeria-overlay" aria-hidden="true">
+            <div
+              class="galeria"
+              role="dialog"
+              aria-modal="true"
+              aria-label="Galeria de experimentos"
+            >
+              <button
+                class="fechar-galeria"
+                type="button"
+                aria-label="Fechar galeria"
+              >
+                ×
+              </button>
+
+              <div class="galeria-cabecalho">
+                <span>APRENDER FAZENDO</span>
+                <h2>Experimentos</h2>
+                <p>Um pouco de descoberta no meio da rotina.</p>
+              </div>
+
+              <div class="fotos-grid">
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/experimentos/DSC04720.JPG"
+                    alt="Experimento da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/experimentos/DSC04722.JPG"
+                    alt="Experimento da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/experimentos/DSC04723.JPG"
+                    alt="Experimento da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/experimentos/DSC04732.JPG"
+                    alt="Experimento da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/experimentos/DSC04738.JPG"
+                    alt="Experimento da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/experimentos/DSC04739.JPG"
+                    alt="Experimento da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/experimentos/DSC04743.JPG"
+                    alt="Experimento da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/experimentos/IMG-20250412-WA0003.jpg"
+                    alt="Atividade da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/experimentos/IMG-20250412-WA0018.jpg"
+                    alt="Atividade da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/experimentos/IMG-20250412-WA0023.jpg"
+                    alt="Atividade da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/experimentos/IMG-20250412-WA0033.jpg"
+                    alt="Atividade da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/experimentos/IMG-20250412-WA0034.jpg"
+                    alt="Atividade da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/experimentos/IMG-20250412-WA0038.jpg"
+                    alt="Atividade da turma"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ÁLBUM 06: PADRINHOS -->
+        <section class="bloco-album" aria-labelledby="titulo-padrinhos">
+          <div class="momento-destaque">
+            <div class="momento-foto">
+              <video
+                autoplay
+                  muted
+                  loop
+                  playsinline
+                preload="metadata"
+                aria-label="Vídeo do convite ao professor Sidney para ser padrinho da turma"
+              >
+                <source
+                  src="img/padrinho/• 28-05-2026 - Dia do convite de padrinho de turma da sala.Muito obrigado professor Sidney, por .mp4"
+                  type="video/mp4"
+                 
+                />
+                
+              </video>
+            </div>
+
+            <div class="momento-info">
+              <span class="numero-momento">06</span>
+              <h3 id="titulo-padrinhos">Nossos padrinhos</h3>
+
+              <p>
+                Mais do que professores, pessoas que acompanharam nossa
+                caminhada e fizeram parte de momentos importantes da nossa
+                história.
+              </p>
+
+              <button class="abrir-galeria" type="button">
+                Ver momentos <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="galeria-overlay" aria-hidden="true">
+            <div
+              class="galeria"
+              role="dialog"
+              aria-modal="true"
+              aria-label="Galeria dos padrinhos"
+            >
+              <button
+                class="fechar-galeria"
+                type="button"
+                aria-label="Fechar galeria"
+              >
+                ×
+              </button>
+
+              <div class="galeria-cabecalho">
+                <span>COM GRATIDÃO</span>
+                <h2>Nossos padrinhos</h2>
+                <p>Obrigado por caminharem conosco.</p>
+              </div>
+
+              <div class="fotos-grid">
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/padrinho/DSC04549.JPG"
+                    alt="Registro dos padrinhos"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/padrinho/DSC04550.JPG"
+                    alt="Registro dos padrinhos"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/padrinho/DSC04551.JPG"
+                    alt="Registro dos padrinhos"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/padrinho/DSC04555.JPG"
+                    alt="Registro dos padrinhos"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/padrinho/SaveClip.App_712964538_17875832625670075_1200163379853347842_n.jpg.webp"
+                    alt="Registro dos padrinhos"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/padrinho/SaveClip.App_713143861_17875832580670075_7535708274500715501_n.jpg.webp"
+                    alt="Registro dos padrinhos"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/padrinho/SaveClip.App_714444529_17875832589670075_1330531004647957549_n.jpg.webp"
+                    alt="Registro dos padrinhos"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/padrinho/SaveClip.App_714722862_17875832616670075_331859922460972450_n.jpg.webp"
+                    alt="Registro dos padrinhos"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/padrinho/SaveClip.App_715450442_17875832607670075_3324583814820564365_n.jpg.webp"
+                    alt="Registro dos padrinhos"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ÁLBUM 07: SONECAS -->
+        <section class="bloco-album" aria-labelledby="titulo-sonecas">
+          <div class="momento-destaque">
+            <div class="momento-foto">
+              <img
+                src="img/sonecas/DSC04591.JPG"
+                alt="Um momento de descanso na escola"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="momento-info">
+              <span class="numero-momento">07</span>
+              <h3 id="titulo-sonecas">Sonecas</h3>
+
+              <p>
+                Porque nem todo momento marcante aconteceu com todo mundo
+                acordado. Às vezes, descansar também fazia parte da rotina.
+              </p>
+
+              <button class="abrir-galeria" type="button">
+                Ver momentos <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="galeria-overlay" aria-hidden="true">
+            <div
+              class="galeria"
+              role="dialog"
+              aria-modal="true"
+              aria-label="Galeria de sonecas"
+            >
+              <button
+                class="fechar-galeria"
+                type="button"
+                aria-label="Fechar galeria"
+              >
+                ×
+              </button>
+
+              <div class="galeria-cabecalho">
+                <span>PAUSA NA ROTINA</span>
+                <h2>Sonecas</h2>
+                <p>Alguns registros que falam por si.</p>
+              </div>
+
+              <div class="fotos-grid">
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/sonecas/DSC04337.JPG"
+                    alt="Momento de descanso"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/sonecas/DSC04591.JPG"
+                    alt="Momento de descanso"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/sonecas/DSC04604.JPG"
+                    alt="Momento de descanso"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/sonecas/DSC04678.JPG"
+                    alt="Momento de descanso"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ÁLBUM 08: FESTA JUNINA -->
+        <section class="bloco-album" aria-labelledby="titulo-junina">
+          <div class="momento-destaque">
+            <div class="momento-foto">
+              <img
+                src="img/festa junina/motion_photo_3632127989535893775.jpg"
+                alt="Registro da festa junina"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="momento-info">
+              <span class="numero-momento">08</span>
+              <h3 id="titulo-junina">Festa Junina</h3>
+
+              <p>
+                Entre brincadeiras, encontros e momentos que renderam boas
+                risadas, mais uma lembrança que merece ficar guardada.
+              </p>
+
+              <button class="abrir-galeria" type="button">
+                Ver momentos <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="galeria-overlay" aria-hidden="true">
+            <div
+              class="galeria"
+              role="dialog"
+              aria-modal="true"
+              aria-label="Galeria da festa junina"
+            >
+              <button
+                class="fechar-galeria"
+                type="button"
+                aria-label="Fechar galeria"
+              >
+                ×
+              </button>
+
+              <div class="galeria-cabecalho">
+                <span>ARRAIÁ DA 3DM</span>
+                <h2>Festa Junina</h2>
+                <p>Uma festa, muitos encontros e boas lembranças.</p>
+              </div>
+
+              <div class="fotos-grid">
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/festa junina/DSC05221.JPG"
+                    alt="Festa junina da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/festa junina/DSC05226.JPG"
+                    alt="Festa junina da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/festa junina/DSC05227.JPG"
+                    alt="Festa junina da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/festa junina/DSC05282.JPG"
+                    alt="Festa junina da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/festa junina/DSC05284.JPG"
+                    alt="Festa junina da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/festa junina/DSC05285.JPG"
+                    alt="Festa junina da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/festa junina/IMG-20260821-WA0051.jpg"
+                    alt="Festa junina da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/festa junina/IMG-20260821-WA0066.jpg"
+                    alt="Festa junina da turma"
+                    loading="lazy"
+                  />
+                </button>
+                <button class="foto-item" type="button">
+                  <img
+                    src="img/festa junina/motion_photo_3632127989535893775.jpg"
+                    alt="Festa junina da turma"
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ÁLBUM 09: TROTES -->
+        <section class="bloco-album" aria-labelledby="titulo-trotes">
+          <div class="momento-destaque">
+            <div class="momento-foto">
+              <img
+                src="img/trotes/DSC05181.JPG"
+                alt="Registro usado como imagem provisória dos trotes"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="momento-info">
+              <span class="numero-momento">09</span>
+              <h3 id="titulo-trotes">Trotes</h3>
+
+              <p>
+                Um pouco de criatividade, ideias inesperadas e muitas risadas.
+                Afinal, também precisávamos aproveitar os momentos fora da
+                rotina.
+              </p>
+
+              <button class="abrir-galeria" type="button">
+                Ver momentos <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="galeria-overlay" aria-hidden="true">
+            <div
+              class="galeria"
+              role="dialog"
+              aria-modal="true"
+              aria-label="Galeria dos trotes"
+            >
+              <button
+                class="fechar-galeria"
+                type="button"
+                aria-label="Fechar galeria"
+              >
+                ×
+              </button>
+
+              <div class="galeria-cabecalho">
+                <span>FORA DA ROTINA</span>
+                <h2>Trotes</h2>
+                <p>Momentos para rir e lembrar.</p>
+              </div>
+
+              <div class="fotos-grid">
+              <!-- Cole este bloco dentro da <div class="fotos-grid"> da seção de Trotes -->
+
+<button class="foto-item">
+    <img src="img/trotes/DSC04625.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05180.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05181.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05185.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05187.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05188.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05189.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05191.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05192.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05426.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05427.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05428.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05429.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05434.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05435.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05436.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05437.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05438.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05439.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05440.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05441.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05442.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05443.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05444.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05445.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05446.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05447.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05450.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05451.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05452.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05453.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05454.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05455.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05456.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05458.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05459.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05460.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05461.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05462.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05463.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05464.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05465.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05466.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05469.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05470.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05471.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05472.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05473.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05478.JPG" alt="Momento" />
+</button>
+<button class="foto-item">
+    <img src="img/trotes/DSC05480.JPG" alt="Momento" />
+</button>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- MODAL GLOBAL PARA FOTO AMPLIADA -->
+        <div class="foto-ampliada" aria-hidden="true">
+          <button
+            class="fechar-foto"
+            type="button"
+            aria-label="Fechar fotografia ampliada"
+          >
+            ×
+          </button>
+
+          <img src="" alt="Fotografia ampliada" />
         </div>
-    </div>
-</section>
+      </section>
 
-<!-- ÁLBUM 02: VIAGENS (Exemplo de Replicação) -->
-<section class="bloco-album">
-    <div class="momento-destaque">
-        <div class="momento-foto">
-            <img src="img/viagens/capa.JPG" alt="Viagens">
-        </div>
-        <div class="momento-info">
-            <span class="numero-momento">02</span>
-            <h3>Caretas</h3>
-            
-            <div class="galeria-overlay">
-                <div class="galeria">
-                    <button class="fechar-galeria">×</button>
-                    <div class="galeria-cabecalho">
-                        <span>Caretas</span>
-                        <h2>Caretas</h2>
-                        <p>As melhores caretas que virmos juntos.</p>
-                    </div>
-                    <div class="fotos-grid">
-                        <button class="foto-item"><img src="img/viagens/1.JPG" alt="Momento"></button>
-                        <button class="foto-item"><img src="img/viagens/2.JPG" alt="Momento"></button>
-                    </div>
-                </div>
-            </div>  
+      <div class="hr-personalizado" aria-hidden="true">
+        <span>✦ 🐻‍❄️ ✦</span>
+      </div>
 
-            <p>As caretas inesquecivei    s, histórias e muitas risadas.</p>
-            <button class="abrir-galeria">Ver momentos <span>→</span></button>
-        </div>
-    </div>
-</section>
+      <!-- 4. DESPEDIDA COLETIVA -->
+      <section class="despedida" id="despedida">
+        <span class="secao-sobretitulo">O QUE FICA</span>
 
-<!-- COLOQUE APENAS UMA ESTRUTURA DE FOTO AMPLIADA NO FINAL DO SEU HTML (Fora de todos os álbuns) -->
-<div class="foto-ampliada">
-    <button class="fechar-foto">×</button>
-    <img src="" alt="Foto ampliada">
-</div>
+        <h2>
+          Talvez a gente só perceba o tamanho de uma fase quando ela está
+          chegando ao fim.
+        </h2>
 
+        <p>
+          Um dia, estas fotos serão lembranças de uma época que passou. Mas as
+          pessoas, as histórias e tudo o que vivemos continuarão fazendo parte
+          de quem somos.
+        </p>
 
+        <p class="texto-destaque">
+          Obrigado, 3DM. Por tudo o que foi — e por tudo o que continuará sendo
+          dentro de nós.
+        </p>
+      </section>
 
+      <!-- 5. ENTRADA PARA HOMENAGENS PRIVADAS -->
+      <section class="homenagens" id="homenagens">
+        <span class="secao-sobretitulo">UMA PARTE SÓ SUA</span>
 
-</section>
+        <h2>Talvez exista uma lembrança esperando por você.</h2>
+
+        <p>
+          Cada pessoa viveu essa história de um jeito. Algumas lembranças
+          merecem ser entregues individualmente.
+        </p>
+
+        <p>
+          Encontre seu nome para descobrir se existe uma homenagem preparada
+          para você.
+        </p>
+
+        <form class="busca-homenagem" action="#" method="get">
+          <label for="buscaPessoa">Procure seu nome</label>
+          <input
+            id="buscaPessoa"
+            name="pessoa"
+            type="search"
+            placeholder="Digite seu nome..."
+            autocomplete="off"
+          />
+          <button type="submit">Encontrar minha homenagem</button>
+        </form>
+
+        <p class="aviso-privacidade">
+          As mensagens e lembranças individuais só serão exibidas depois que a
+          própria pessoa escolher entrar e desbloquear sua homenagem.
+        </p>
+      </section>
     </main>
 
-    <footer></footer>
+    <footer class="rodape">
+      <p>Feito com carinho para todos que fizeram parte da 3DM.</p>
+      <p>Uma história que foi nossa.</p>
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+
     <script src="../backend/script.js"></script>
   </body>
 </html>

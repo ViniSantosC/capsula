@@ -1,8 +1,4 @@
-/*
-  Projeto original 3DM — O Que Fica.
-  Mantém o azul escuro/azul-luz do autor. Correção principal: todas as fotos
-  usam object-fit: contain, aspect-ratio ou altura automática; nenhuma é esticada.
-*/
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -211,12 +207,7 @@ main {
   background: #071426;
   text-align: center;
 }
-.direita {
-  flex: 1;
-}
-.esquerda {
-  flex: 1;
-}
+
 .esquerda img {
   display: block;
   width: 100%;
@@ -233,6 +224,7 @@ main {
   font-size: clamp(2.3rem, 5vw, 4rem);
   font-style: italic;
 }
+
 .s1,
 .s2 {
   font-size: 1.5rem;
@@ -252,6 +244,7 @@ main {
   max-width: 520px;
   margin: 30px auto;
 }
+
 .accordion-item {
   margin-bottom: 12px !important;
   overflow: hidden;
@@ -547,6 +540,19 @@ main {
 }
 body::-webkit-scrollbar {
     display: none;
+}
+.inicio-indicador {
+  margin: 1rem auto;
+  font-size: 1.5rem;
+  color: #63a9ff;
+  font-style: italic;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.inicio-indicador:hover {
+  color: #076ce7;
+  transform: scale(1.1) translateY(-5px);
+  
 }
 .galeria-overlay.aberta .galeria {
   transform: scale(1) translateY(0);
