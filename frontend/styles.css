@@ -258,6 +258,13 @@ main {
   transform: translateY(-3px);
   border-color: rgba(99, 169, 255, 0.5) !important;
 }
+.despedida {
+  gap: 3rem;
+  text-align: center;
+  span{
+font-size: 2rem;
+  }
+}
 .accordion-button {
   padding: 20px 22px;
   background: transparent;
