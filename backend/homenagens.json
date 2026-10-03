@@ -1,0 +1,34 @@
+[
+  {
+    "id": "clara",
+    "nome": "Clara",
+    "senha": "clara2026",
+    "foto": "clara.jpg",
+    "mensagem": "Clara,\n\nAqui ficará a homenagem dela.\n\nPode colocar aqui as lembranças, histórias e tudo aquilo que você gostaria que ela levasse dessa fase.",
+    "legenda": "Uma amizade que fica."
+  },
+  {
+    "id": "matheus",
+    "nome": "Matheus",
+    "senha": "matheus2026",
+    "foto": "matheus.jpg",
+    "mensagem": "Matheus,\n\nAqui ficará a homenagem personalizada.\n\nAqui entra a história e as lembranças que fazem parte da nossa caminhada.",
+    "legenda": "Uma parte da nossa história."
+  },
+  {
+    "id": "larisa",
+    "nome": "Larisa",
+    "senha": "larisa2026",
+    "foto": "larisa.jpg",
+    "mensagem": "Larisa,\n\nAqui ficará a homenagem dela.",
+    "legenda": "Uma lembrança para guardar."
+  },
+  {
+    "id": "ryan",
+    "nome": "Ryan",
+    "senha": "ryan2026",
+    "foto": "ryan.jpg",
+    "mensagem": "Ryan,\n\nAqui ficará a homenagem personalizada.",
+    "legenda": "O que fica."
+  }
+]
